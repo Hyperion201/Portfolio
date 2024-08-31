@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Key Search",
+    "version": "1.0",
+    "description": "Search for Cheap Game Keys.",
+    "permissions": ["activeTab", "contextMenus"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "48": "images/key48.png"
+    }
+    }
